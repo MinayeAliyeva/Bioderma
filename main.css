@@ -174,4 +174,29 @@ header .header .bottom-side .bottom-side-header ul li a {
   color: rgba(0, 0, 0, 0.628);
   font-weight: 600;
   font-size: 13px;
+}
+
+#herro-banner {
+  height: 100vh;
+}
+#herro-banner .row {
+  height: 400px;
+}
+#herro-banner .row .herro-right {
+  background-image: url(./images/bannerRight.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 10px;
+}
+#herro-banner .row .herro-left {
+  background-image: url(./images//bannerLeft.png);
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  #herro-banner .herro-right.col-7,
+  #herro-banner .herro-right.col-4 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
