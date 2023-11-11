@@ -7,6 +7,7 @@
 }
 
 header .header .top-side {
+  margin: 10px 0;
   display: flex;
   align-items: center;
   background-color: #6bacc8;
@@ -80,12 +81,15 @@ header .header .top-side .top-side-container .contact .icon {
 header .header .top-side .top-side-container .contact .icon i {
   margin: 0 5px;
 }
+header .header .medium-side {
+  margin: 10px 0;
+}
 header .header .medium-side .medium-side-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 992px) {
   header .header .medium-side .medium-side-container {
     flex-direction: column;
     row-gap: 10px;
@@ -115,7 +119,7 @@ header .header .medium-side .medium-side-container .brands img {
 header .header .medium-side .medium-side-container .searching-side {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 @media screen and (max-width: 576px) {
   header .header .medium-side .medium-side-container .searching-side {
@@ -155,4 +159,19 @@ header .header .medium-side .medium-side-container .searching-side .fa-shopping-
 header .header .medium-side .medium-side-container .searching-side h6 {
   margin-bottom: 0;
   color: gray;
+}
+header .header .bottom-side {
+  margin: 20px 0;
+}
+header .header .bottom-side .bottom-side-header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+header .header .bottom-side .bottom-side-header ul li a {
+  color: rgba(0, 0, 0, 0.628);
+  font-weight: 600;
+  font-size: 13px;
 }/*# sourceMappingURL=main.css.map */

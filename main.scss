@@ -10,6 +10,7 @@
 header {
   .header {
     .top-side {
+      margin: 10px 0;
       display: flex;
       align-items: center;
       background-color: #6bacc8;
@@ -70,11 +71,12 @@ header {
       }
     }
     .medium-side {
+      margin: 10px 0;
       .medium-side-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media only screen and (max-width: 770px) {
+        @media only screen and (max-width: 992px) {
           flex-direction: column;
           row-gap: 10px;
         }
@@ -91,7 +93,7 @@ header {
           img {
             margin-left: 20px;
           }
-          @media only screen and (max-width:576px) {
+          @media only screen and (max-width: 576px) {
             flex-direction: column;
             row-gap: 20px;
           }
@@ -99,7 +101,7 @@ header {
         .searching-side {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 20px;
           //islemir
           @media screen and (max-width: 576px) {
             flex-direction: column !important;
@@ -110,7 +112,7 @@ header {
             border: 1px solid gray;
             border-radius: 5px;
             outline: none;
-            @media screen and (max-width:576px) {
+            @media screen and (max-width: 576px) {
               width: 200px;
             }
             .search-input {
@@ -132,6 +134,25 @@ header {
           h6 {
             margin-bottom: 0;
             color: gray;
+          }
+        }
+      }
+    }
+    .bottom-side {
+      margin: 20px 0;
+      .bottom-side-header {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 20px;
+          li{
+            a{
+              color: rgba(0, 0, 0, 0.628);
+              font-weight: 600;
+              font-size: 13px;
+            }
           }
         }
       }
