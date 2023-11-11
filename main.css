@@ -176,27 +176,178 @@ header .header .bottom-side .bottom-side-header ul li a {
   font-size: 13px;
 }
 
-#herro-banner {
-  height: 100vh;
+#hero {
+  padding: 50px 0;
 }
-#herro-banner .row {
-  height: 400px;
+#hero .row {
+  flex-basis: 100%;
+  row-gap: 20px;
 }
-#herro-banner .row .herro-right {
-  background-image: url(./images/bannerRight.png);
+#hero .row .left {
+  background: url("./images/bannerRight.png") no-repeat;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0 10px;
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  padding: 0 50px;
+  overflow: hidden;
 }
-#herro-banner .row .herro-left {
-  background-image: url(./images//bannerLeft.png);
-  margin: 0 10px;
+#hero .row .left::after {
+  background-color: rgba(0, 0, 0, 0.15);
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+#hero .row .left .left-content {
+  position: relative;
+  width: 40%;
+  z-index: 2;
+}
+#hero .row .left .left-content h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.5;
+}
+#hero .row .left .left-content h3 span {
+  color: #279;
+}
+#hero .row .left .addition-img {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 25px;
+  right: 100px;
+  width: 200px;
+  height: 200px;
+}
+#hero .row .left .addition-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#hero .row .right {
+  position: relative;
+  background: url("./images/bannerLeft.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+#hero .row .right .right-content {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
+}
+#hero .row .right .right-content h3 {
+  width: 100%;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: normal;
+  color: #000;
+}
+#hero .row .right .right-content .right-content-bottom {
+  margin-top: 60px;
+  position: relative;
+  z-index: 2;
+}
+#hero .row .right .right-content .right-content-bottom h5 {
+  font-size: 16px;
+  color: gray;
+}
+#hero .row .right .right-content .right-content-bottom h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+#hero .row .right .right-content .right-content-bottom button {
+  margin-top: 10px;
+  font-size: 16px;
+  min-height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DB3333;
+}
+#hero .row .right .right-content .right_img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 50px;
+  z-index: 1;
+  right: -30px;
+}
+#hero .row .right .right-content .right_img img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-@media only screen and (max-width: 768px) {
-  #herro-banner .herro-right.col-7,
-  #herro-banner .herro-right.col-4 {
+@media screen and (max-width: 1200px) {
+  .addition-img {
+    right: 65px;
+    bottom: 35px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .left-content {
+    position: relative;
+    width: 60%;
+    margin-bottom: 30px;
+  }
+  .addition-img {
+    right: 100px;
+    bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .left {
+    padding: 0 20px;
+  }
+  .left-content {
     width: 100%;
+  }
+  .addition-img {
+    right: 40px;
+    height: 150px;
+    width: 150px;
+    bottom: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .left {
+    flex-direction: column-reverse;
+    height: 430px;
+  }
+  .left-content h3 {
+    font-size: 24px;
+  }
+  .addition-img {
+    position: relative;
+    right: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
