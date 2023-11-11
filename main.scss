@@ -32,10 +32,10 @@ header {
           line-height: 16px;
           color: white;
           @media screen and (max-width: 576px) {
-            font-size: 10px;
+            font-size: 15px;
           }
           @media screen and (max-width: 373px) {
-            font-size: 7px;
+            font-size: 10px;
           }
         }
         .contact {
@@ -57,14 +57,81 @@ header {
             line-height: 16px;
             color: white;
             @media screen and (max-width: 576px) {
-              font-size: 10px;
+              font-size: 15px;
             }
             @media screen and (max-width: 373px) {
-              font-size: 7px;
+              font-size: 10px;
             }
             i {
               margin: 0 5px;
             }
+          }
+        }
+      }
+    }
+    .medium-side {
+      .medium-side-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media only screen and (max-width: 770px) {
+          flex-direction: column;
+          row-gap: 10px;
+        }
+        .logo {
+          @media only screen and (max-width: 576px) {
+            width: 150px;
+          }
+        }
+        .brands {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 10px;
+          img {
+            margin-left: 20px;
+          }
+          @media only screen and (max-width:576px) {
+            flex-direction: column;
+            row-gap: 20px;
+          }
+        }
+        .searching-side {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          //islemir
+          @media screen and (max-width: 576px) {
+            flex-direction: column !important;
+          }
+          .searching {
+            position: relative;
+            width: 250px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            outline: none;
+            @media screen and (max-width:576px) {
+              width: 200px;
+            }
+            .search-input {
+              width: 100%;
+            }
+            .fa-magnifying-glass {
+              position: absolute;
+              right: 10px;
+              color: #808080db;
+              top: 5px;
+              &::placeholder {
+                padding: 10px;
+              }
+            }
+          }
+          .fa-shopping-basket {
+            color: gray;
+          }
+          h6 {
+            margin-bottom: 0;
+            color: gray;
           }
         }
       }
