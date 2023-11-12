@@ -512,10 +512,31 @@ header {
       padding: 35px;
       column-gap: 50px;
       flex-wrap: wrap;
-      .card{
-    
+      .card {
         border: none;
         margin: 20px;
+      }
+    }
+    .bottom-side {
+      display: flex;
+      column-gap: 50px;
+      padding: 0 50px;
+      .card {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        row-gap: 15px;
+
+        img {
+          width: 100px;
+        }
+        .icons {
+          i {
+            background: gray;
+            border-radius: 50%;
+            padding: 5px 8px;
+          }
+        }
       }
     }
   }

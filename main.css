@@ -507,4 +507,24 @@ header .header .bottom-side .bottom-side-header ul li a {
 #footer .row .top-side .card {
   border: none;
   margin: 20px;
+}
+#footer .row .bottom-side {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  padding: 0 50px;
+}
+#footer .row .bottom-side .card {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  row-gap: 15px;
+}
+#footer .row .bottom-side .card img {
+  width: 100px;
+}
+#footer .row .bottom-side .card .icons i {
+  background: gray;
+  border-radius: 50%;
+  padding: 5px 8px;
 }/*# sourceMappingURL=main.css.map */
