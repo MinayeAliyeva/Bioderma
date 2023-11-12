@@ -486,4 +486,25 @@ header .header .bottom-side .bottom-side-header ul li a {
   background: none;
   border: 1px solid gray;
   border-radius: 5px;
+}
+
+#referances {
+  background-color: #ffc52d;
+}
+#referances .row .img-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .row .top-side {
+  display: flex;
+  padding: 35px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  flex-wrap: wrap;
+}
+#footer .row .top-side .card {
+  border: none;
+  margin: 20px;
 }/*# sourceMappingURL=main.css.map */

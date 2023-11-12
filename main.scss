@@ -448,10 +448,9 @@ header {
     .images {
       display: flex;
       column-gap: 50px;
-      @media screen and ( max-width:992px){
+      @media screen and (max-width: 992px) {
         flex-direction: column;
         row-gap: 30px;
-    
       }
     }
     .button {
@@ -467,32 +466,57 @@ header {
     }
   }
 }
-#care{
-  h6{
+#care {
+  h6 {
     text-decoration: underline !important;
   }
-  .care{
-    .card{
+  .care {
+    .card {
       border: none;
       padding: 5px;
-      .text-side{
+      .text-side {
         display: flex;
         flex-direction: column;
         row-gap: 10px;
         align-items: center;
         padding: 20px 0;
-    
-        h3{
+
+        h3 {
           font-size: 15px;
           color: #212529;
         }
-        button{
+        button {
           width: 250px;
           background: none;
           border: 1px solid gray;
           border-radius: 5px;
-      }
         }
       }
     }
   }
+}
+#referances {
+  background-color: #ffc52d;
+  .row {
+    .img-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+#footer {
+  .row {
+    .top-side {
+      display: flex;
+      padding: 35px;
+      column-gap: 50px;
+      flex-wrap: wrap;
+      .card{
+    
+        border: none;
+        margin: 20px;
+      }
+    }
+  }
+}
