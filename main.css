@@ -352,7 +352,7 @@ header .header .bottom-side .bottom-side-header ul li a {
   }
 }
 #products {
-  height: 100vh;
+  margin: 20px 0;
 }
 #products h3 {
   text-decoration: underline !important;
@@ -430,4 +430,36 @@ header .header .bottom-side .bottom-side-header ul li a {
   right: 28%;
   top: 7px;
   color: #0ea4cf;
+}
+
+#adds {
+  margin: 20px 0;
+  height: 100vh;
+}
+#adds .adds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#adds .adds .images {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+@media screen and (max-width: 992px) {
+  #adds .adds .images {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+#adds .adds .button button {
+  width: 250px;
+  border: 1px solid #0ea4cf;
+  border-radius: 5px;
+  background: none;
+  padding: 4px;
+  color: #0ea4cf;
+  margin: 20px 0;
 }/*# sourceMappingURL=main.css.map */

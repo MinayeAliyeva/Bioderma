@@ -345,7 +345,8 @@ header {
 }
 
 #products {
-  height: 100vh;
+  // height: 100vh;
+  margin: 20px 0;
   h3 {
     text-decoration: underline !important;
     font-weight: 400;
@@ -423,14 +424,46 @@ header {
             padding: 4px;
             color: #0ea4cf;
           }
-          i{
+          i {
             position: absolute;
             right: 28%;
-            top:7px;
+            top: 7px;
             color: #0ea4cf;
-
           }
         }
+      }
+    }
+  }
+}
+
+// adds section
+#adds {
+  margin: 20px 0;
+  height: 100vh;
+  .adds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .images {
+      display: flex;
+      column-gap: 50px;
+      @media screen and ( max-width:992px){
+        flex-direction: column;
+        row-gap: 30px;
+    
+      }
+    }
+    .button {
+      button {
+        width: 250px;
+        border: 1px solid #0ea4cf;
+        border-radius: 5px;
+        background: none;
+        padding: 4px;
+        color: #0ea4cf;
+        margin: 20px 0;
       }
     }
   }
