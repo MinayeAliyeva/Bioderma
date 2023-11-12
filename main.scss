@@ -439,7 +439,6 @@ header {
 // adds section
 #adds {
   margin: 20px 0;
-  height: 100vh;
   .adds {
     display: flex;
     flex-direction: column;
@@ -468,3 +467,32 @@ header {
     }
   }
 }
+#care{
+  h6{
+    text-decoration: underline !important;
+  }
+  .care{
+    .card{
+      border: none;
+      padding: 5px;
+      .text-side{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+        padding: 20px 0;
+    
+        h3{
+          font-size: 15px;
+          color: #212529;
+        }
+        button{
+          width: 250px;
+          background: none;
+          border: 1px solid gray;
+          border-radius: 5px;
+      }
+        }
+      }
+    }
+  }
