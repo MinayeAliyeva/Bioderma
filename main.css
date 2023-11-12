@@ -284,7 +284,7 @@ header .header .bottom-side .bottom-side-header ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #DB3333;
+  background-color: #db3333;
 }
 #hero .row .right .right-content .right_img {
   width: 200px;
@@ -350,4 +350,84 @@ header .header .bottom-side .bottom-side-header ul li a {
     display: flex;
     align-items: center;
   }
+}
+#products {
+  height: 100vh;
+}
+#products h3 {
+  text-decoration: underline !important;
+  font-weight: 400;
+  font-size: 20px;
+  color: #009bc7;
+}
+#products .products .card {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  display: flex;
+  width: 300px;
+}
+#products .products .card .img-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #eeeeee;
+  padding: 10px;
+  border-radius: 10px;
+}
+#products .products .card .img-btn img {
+  width: 50px;
+}
+#products .products .card .img-btn .buttons {
+  padding: 4px;
+  margin: 5px 0;
+  overflow: hidden;
+}
+#products .products .card .img-btn .buttons .best-selling-btn {
+  outline: none;
+  border: 1px solid #009bc7;
+  border-radius: 4px;
+  padding: 4px 10px;
+  color: white;
+  background-color: #009bc7;
+}
+#products .products .card .img-btn .buttons .free-btn {
+  outline: none;
+  border: 1px solid #db3333;
+  border-radius: 4px;
+  padding: 4px 10px;
+  color: white;
+  background-color: #db3333;
+}
+#products .products .card .content-side h6 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #757575;
+}
+#products .products .card .content-side h5 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+#products .products .card .content-side span {
+  color: #444a51;
+  font-size: 18px;
+  font-weight: 400;
+}
+#products .products .card .content-side .wishlist-btn {
+  position: relative;
+}
+#products .products .card .content-side .wishlist-btn button {
+  width: 100%;
+  border: 1px solid #0ea4cf;
+  border-radius: 5px;
+  background: none;
+  padding: 4px;
+  color: #0ea4cf;
+}
+#products .products .card .content-side .wishlist-btn i {
+  position: absolute;
+  right: 28%;
+  top: 7px;
+  color: #0ea4cf;
 }/*# sourceMappingURL=main.css.map */
